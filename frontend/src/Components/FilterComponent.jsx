@@ -30,7 +30,7 @@ const FilterComponent = () => {
   return (
     <Box>
       <HStack  >
-        <Select color={"black"} value={selectedCategory} onChange={handleCategoryChange}>
+        <Select color={"white"} value={selectedCategory} onChange={handleCategoryChange}>
           <option value="">All Categories</option>
           {category.map((category) => (
             <option key={category} value={category}>

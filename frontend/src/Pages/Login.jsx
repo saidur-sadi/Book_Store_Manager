@@ -1,3 +1,4 @@
+// Desc: Login page for the user to login to the application
 import {
   Button,
   Container,
@@ -33,7 +34,7 @@ const Login = () => {
     const { name, value } = e.target;
     setLoginDetails({ ...loginDetails, [name]: value });
   };
-
+ 
 
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
@@ -41,11 +42,9 @@ const Login = () => {
     }
   };
 
-
   const handleLogin = async () => {
     if (email === "" || password === "") {
       return alert("fill both credentials");
-    
     }
     dispatch(login(loginDetails));
     if (isAuthenticated) {
@@ -85,8 +84,8 @@ const Login = () => {
       display="flex"
       alignItems="center"
       justifyContent="center"
-      background={"black"}
-      color={"white"}
+      background={"white"}
+      color={"blue.600"}
     >
       <VStack
         width="full"
@@ -140,7 +139,7 @@ const Login = () => {
             colorScheme="teal"
             _hover={{
               bg: "teal.300",
-              color: "white",
+              color: "blue.600",
             }}
             variant="outline"
             mt={4}
@@ -157,7 +156,7 @@ const Login = () => {
             colorScheme="teal"
             _hover={{
               bg: "teal.300",
-              color: "white",
+              color: "blue.600",
             }}
             variant="outline"
             mt={4}

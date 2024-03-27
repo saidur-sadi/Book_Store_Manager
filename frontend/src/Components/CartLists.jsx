@@ -14,7 +14,7 @@ const CartLists = ({ cartItems, handleOrder }) => {
   }, [cartItems]);
 
   return (
-    <Box mt={"80px"} h={"100vh"} background={"black"} color={"red"} className="mt-20 h-screen">
+    <Box mt={"80px"} h={"100vh"} background={"white"} color={"blue.600"} className="mt-20 h-screen">
       {cartItems.map((cart) => (
         <CartCard key={cart._id} cart={cart} />
       ))}

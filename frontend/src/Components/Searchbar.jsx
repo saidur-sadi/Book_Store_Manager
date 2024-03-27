@@ -57,7 +57,7 @@ export const Searchbar = () => {
                 children={
                   <IconButton
                     aria-label="Search books"
-                    bg="black"
+                    bg="white"
                     onClick={() => dispatch(getSearchBooks(query))}
                     icon={<SearchIcon />}
                   />

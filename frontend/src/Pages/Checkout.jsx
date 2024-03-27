@@ -1,3 +1,4 @@
+// Desc: Checkout page for the user to enter the delivery address and payment method.
 import React, { useEffect, useState } from "react";
 import {
   Box,
@@ -165,7 +166,7 @@ const CheckOut = () => {
   }
 
   return (
-    <Box p={4} mt={"50px"} background={"#9F3194"} color={"white"}  >
+    <Box p={4} mt={"50px"} background={"#dce3e6"} color={"white"}  >
       <Heading color={"black"} textAlign={"center"} >
         Checkout
       </Heading>
@@ -180,8 +181,8 @@ const CheckOut = () => {
         <Grid
           templateColumns="repeat(3, 1fr)"
           alignItems=""
-          background="black"
-          color="white"
+          background="white"
+          color="blue.600"
            display={"flex"}
           gap={"10px"}
           justifyContent={"space-between"}
@@ -204,7 +205,7 @@ const CheckOut = () => {
         <Heading as="h2" size="md" color={"white"} mb={2}>
           Cart Items ({totalItems})
         </Heading>
-        <Box height={"200px"} overflowY={"scroll"} background={"black"} color={"white"} id="example">
+        <Box height={"200px"} overflowY={"scroll"} background={"white"} color={"blue.600"} id="example">
           {cartData.map((item) => (
             <Grid
               key={item._id}
@@ -230,7 +231,7 @@ const CheckOut = () => {
         </Box>
 
         <Box>
-          <Grid templateColumns="repeat(2, 1fr)" gap={4} alignItems="center" background={"black"} color={"white"}>
+          <Grid templateColumns="repeat(2, 1fr)" gap={4} alignItems="center" background={"white"} color={"blue.600"}>
             <Text>Total Items:</Text>
             <Text>{totalItems}</Text>
             <Text>Total Quantity:</Text>
@@ -240,7 +241,7 @@ const CheckOut = () => {
           </Grid>
         </Box>
 
-        <FormControl background={"black"} color={"white"}>
+        <FormControl background={"white"} color={"blue.600"}>
           <FormLabel>Payment Method</FormLabel>
           <Stack direction="row" spacing={4}>
             <Checkbox

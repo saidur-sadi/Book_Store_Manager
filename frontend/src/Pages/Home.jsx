@@ -1,3 +1,4 @@
+// Desc: Home page to display all books
 import React, { useEffect, useState } from "react";
 import BookLists from "../Components/BookLists";
 import { useDispatch, useSelector } from "react-redux";
@@ -21,7 +22,7 @@ const Home = () => {
     }
   }, [filterData, allBooks]);
 
-  if (loading) return <Loading />;
+  // if (loading) return <Loading />;
 
   return <BookLists books={allBookData} />;
 };

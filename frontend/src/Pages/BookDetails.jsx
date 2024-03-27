@@ -1,3 +1,4 @@
+//BookDetails page to show the details of a single book. It will show the image, title, author, price, category, and description of the book. It will also have an Add to Cart button to add the book to the cart. If the book is already in the cart, the button will be disabled.
 import {
   Box,
   Button,

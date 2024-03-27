@@ -1,3 +1,4 @@
+// Desc: Sign Up page for new users
 import {
   Button,
   Container,
@@ -76,8 +77,8 @@ const SignUp = () => {
       display="flex"
       alignItems="center"
       justifyContent="center"
-      background={"black"}
-      color={"white"}
+      background={"white"}
+      color={"blue.600"}
     >
       <VStack
         width="full"
@@ -144,7 +145,7 @@ const SignUp = () => {
             colorScheme="teal"
             _hover={{
               bg: "teal.300",
-              color: "white",
+              color: "blue.600",
             }}
             variant="outline"
             mt={4}

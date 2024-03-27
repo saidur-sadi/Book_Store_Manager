@@ -51,8 +51,8 @@ const BookCard = ({ book }) => {
     <Box
       borderWidth="4px"
       borderRadius="2g"
-      background={"black"}
-      textColor={"white"}
+      background={"white"}
+      textColor={"blue.600"}
       p={4}
       className="border border-gray-300 rounded-lg overflow-hidden p-4"
     >
@@ -92,7 +92,7 @@ const BookCard = ({ book }) => {
         colorScheme="teal"
         _hover={{
           bg: "teal.300",
-          color: "white",
+          color: "red",
         }}
         variant="outline"
         mt={4}

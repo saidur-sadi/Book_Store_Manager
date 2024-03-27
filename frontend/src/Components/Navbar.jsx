@@ -45,7 +45,7 @@ const Navbar = () => {
     <Container
       px={4}
       border={"2px solid blue"}
-      background={"#5B3D9F"}
+      background={"blue.600"}
       maxW={"100%"}
       position="fixed"
       color="white"

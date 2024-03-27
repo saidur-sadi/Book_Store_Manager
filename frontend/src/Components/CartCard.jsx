@@ -47,8 +47,8 @@ const CartCard = ({ cart }) => {
       alignItems="center"
       justifyContent="space-between"
       p={4}
-      background={"black"}
-      textColor={"white"}
+      background={"white"}
+      textColor={"blue.600"}
       width="full"
       gap={2}
       mb={2}
@@ -107,6 +107,7 @@ const CartCard = ({ cart }) => {
       <GridItem>
         <Button 
          bg="red.500"
+          color="white"
           width={"100px"}
           borderWidth="1px"
           border={"1px solid white"}

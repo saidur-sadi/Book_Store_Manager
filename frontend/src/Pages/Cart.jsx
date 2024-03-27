@@ -1,3 +1,4 @@
+// Desc: Cart page to display the items in the cart
 import React from "react";
 import CartLists from "../Components/CartLists";
 import { useSelector } from "react-redux";
